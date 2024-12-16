@@ -1,120 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Homepage</title>
-    <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2rem;
-        }
-        nav {
-            background: #444;
-            display: flex;
-            justify-content: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 1rem;
-            font-size: 1rem;
-        }
-        nav a:hover {
-            background: #555;
-        }
+  <meta charset="utf-8">
+  <title>About Me - [Your Name]</title>
 
-        /* Section Styles */
-        section {
-            padding: 2rem;
-            margin: 1rem auto;
-            max-width: 800px;
-            background: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        section h2 {
-            color: #444;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 0.5rem;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem 0;
-            background: #333;
-            color: #fff;
-        }
-    </style>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7PEZPBN07D"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-7PEZPBN07D');
-    </script>
+  <!-- SEO Metadata -->
+  <meta property="og:locale" content="en-US">
+  <meta property="og:site_name" content="[Your Name]">
+  <meta property="og:title" content="About Me">
+  <meta property="og:url" content="[Your Website URL]">
+  <meta property="og:description" content="About Me">
+
+  <!-- Responsive Design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="[Your CSS File URL]"><!-- Replace with your own stylesheet URL -->
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <h1>Welcome to My Personal Homepage</h1>
-        <p>A little about me, my studies, and my research interests.</p>
-    </header>
 
-    <!-- Navigation -->
+  <!-- Header / Navigation -->
+  <header class="masthead">
     <nav>
-        <a href="#about">About</a>
-        <a href="#study">Study</a>
-        <a href="#research">Research</a>
+      <ul>
+        <li><a href="[Your Homepage URL]">Home</a></li>
+        <li><a href="[Your Publications URL]">Papers</a></li>
+        <li><a href="[Your Talks URL]">Talks</a></li>
+      </ul>
     </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div itemscope itemtype="http://schema.org/Person">
+        <img src="[Your Profile Picture URL]" alt="[Your Name]">
+        <h3>[Your Name]</h3>
+        <p>[Your Bio, e.g., "Third-year PhD student at XYZ University."]</p>
+        <ul>
+          <li><a href="mailto:[Your Email]">Email</a></li>
+          <li><a href="[Your Google Scholar URL]">Google Scholar</a></li>
+        </ul>
+      </div>
+    </aside>
 
     <!-- About Section -->
-    <section id="about">
-        <h2>About</h2>
-        <p>Hello! My name is [Your Name]. I’m passionate about learning, exploring new technologies, and contributing to meaningful projects. In my free time, I enjoy hiking, reading, and coding personal projects.</p>
+    <section>
+      <h1>About Me</h1>
+      <p>[Write about yourself, your background, and your current work or studies.]</p>
     </section>
 
-    <!-- Study Section -->
-    <section id="study">
-        <h2>Study</h2>
-        <p>I’m currently pursuing [Your Degree] in [Your Field] at [Your Institution]. My academic journey has equipped me with a solid foundation in subjects like:</p>
-        <ul>
-            <li>Artificial Intelligence and Machine Learning</li>
-            <li>Data Analysis and Visualization</li>
-            <li>Mathematical Modeling and Simulations</li>
-        </ul>
-        <p>I'm always eager to learn new things and stay up-to-date with the latest advancements in my field.</p>
+    <!-- Awards & Honors Section -->
+    <section>
+      <h2>Awards & Honors</h2>
+      <ul>
+        <li>[Year], [Award Name], [Institution]</li>
+        <li>[Year], [Award Name], [Institution]</li>
+      </ul>
     </section>
 
-    <!-- Research Section -->
-    <section id="research">
-        <h2>Research</h2>
-        <p>My research focuses on [Your Research Topic]. I am particularly interested in exploring:</p>
-        <ol>
-            <li>Innovative methods for data processing and pattern recognition.</li>
-            <li>Applications of AI in [Your Specific Domain].</li>
-            <li>Improving computational efficiency in [Your Research Area].</li>
-        </ol>
-        <p>Through my work, I aim to contribute to solving real-world challenges and advancing knowledge in my area of expertise.</p>
-    </section>
+  </main>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; [Year] [Your Name]. All rights reserved.</p>
+  </footer>
+
+  <!-- Analytics Script -->
+  <script>
+    (function(i,s,o,g,r,a,m){
+      i['GoogleAnalyticsObject']=r;
+      i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)
+      },i[r].l=1*new Date();
+      a=s.createElement(o),m=s.getElementsByTagName(o)[0];
+      a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', '[Your Tracking ID]', 'auto');
+    ga('send', 'pageview');
+  </script>
 </body>
 </html>
